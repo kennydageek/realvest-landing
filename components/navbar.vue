@@ -34,7 +34,7 @@
     </div>
 
     <!-- Sidebar (initially hidden) -->
-    <div class="sidebar" :class="{ active: isSidebarOpen }">
+    <div class="sidebar md:hidden" :class="{ active: isSidebarOpen }">
       <!-- Close button for the sidebar -->
       <img
         src="@/assets/images/logo.svg"
