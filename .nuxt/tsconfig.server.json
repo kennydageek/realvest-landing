@@ -1,0 +1,64 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/.nuxt/types/nitro-imports"
+      ],
+      "#paths": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing"
+      ],
+      "~/*": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/*"
+      ],
+      "@": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing"
+      ],
+      "@/*": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/*"
+      ],
+      "~~": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing"
+      ],
+      "~~/*": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/*"
+      ],
+      "@@": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing"
+      ],
+      "@@/*": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/*"
+      ],
+      "assets": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/assets"
+      ],
+      "assets/*": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/assets/*"
+      ],
+      "public": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/public"
+      ],
+      "public/*": [
+        "/Users/kehindeajibade/Desktop/Github/realvest-landing/public/*"
+      ]
+    }
+  },
+  "include": [
+    "/Users/kehindeajibade/Desktop/Github/realvest-landing/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ]
+}

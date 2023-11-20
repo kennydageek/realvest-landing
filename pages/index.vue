@@ -265,7 +265,7 @@
   <section
     class="plans !bg-[#fff] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row gap-10 md:gap-[187px]"
   >
-    <img src="@/assets/images/FAQ.png" alt="" class="md:w-1/2" />
+    <img src="@/assets/images/FAQ.png" alt="" class="self-center w-[45%]" />
 
     <div class="self-center order-[-1] md:order-none">
       <div
