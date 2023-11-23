@@ -1,8 +1,8 @@
 <template>
   <div
-    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-screen md:h-[110vh]"
+    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[110vh] md:h-[110vh] mt-10"
   >
-    <div class="text-center w-full md:w-[1121px] mx-auto">
+    <div class="text-center w-full md:w-[1121px] mx-auto px-6">
       <h1
         class="text-white font-bold text-[40px] md:text-[72px] leading-[56px] md:leading-[80px]"
       >
@@ -18,7 +18,7 @@
       <div class="cta mt-10">
         <a
           href="#"
-          class="primary-button px-8 rounded-[12px] inline-flex gap-[10px] justify-center self-center"
+          class="primary-button px-8 rounded-[12px] inline-flex space-x-[10px] justify-center self-center"
         >
           <p class="font-bold text-[16px] self-center">Get Started</p>
           <img
@@ -29,12 +29,12 @@
       </div>
       <div class="px-[24px] md:px-[120px] absolute top-[80%] md:top-[55%]">
         <img
-          src="@/assets/images/dashboard-elements.svg"
+          src="@/assets/images/header-image-2.png"
           alt=""
           class="object-cover w-full hidden md:block"
         />
         <img
-          src="@/assets/images/dashboard-elements-mobile.svg"
+          src="@/assets/images/header-image-2.png"
           alt=""
           class="object-cover w-full block md:hidden"
         />
@@ -44,7 +44,7 @@
 
   <!-- Section about -->
   <section
-    class="mt-[200px] md:mt-[500px] px-[24px] md:px-[120px] pb-12 md:pb-[144px] flex flex-col md:flex-row gap-[50px]"
+    class="mt-[200px] md:mt-[350px] px-[24px] md:px-[120px] pb-12 md:pb-[144px] flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-0"
   >
     <div class="self-center md:w-[45%]">
       <div
@@ -61,8 +61,8 @@
         accountability in everything we do
       </p>
 
-      <div class="mt-10 flex gap-[47px]">
-        <div>
+      <div class="mt-10 flex space-x-[47px] md:space-y-0 space-y-[47px]">
+        <div class="self-end">
           <p class="text-[24px] md:text-[40px] text-[#252f48] font-bold">
             60K<span class="text-[#f35c35]">+</span>
           </p>
@@ -87,9 +87,11 @@
     <div
       class="second-div w-full md:w-[55%] flex flex-col md:flex-row flex-wrap self-start gap-8"
     >
-      <div class="card bg-white md:w-[47%]">
+      <div
+        class="card space-y-[40px] md:space-y-0 bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white transition-colors"
+      >
         <img src="@/assets/images/affordable.svg" alt="" />
-        <p class="mt-6 text-[#252748] font-semibold text-xl">
+        <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
           Reliable investment plans
         </p>
         <p>
@@ -98,9 +100,9 @@
         </p>
       </div>
 
-      <div class="card bg-white md:w-[47%]">
+      <div class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white">
         <img src="@/assets/images/referral.svg" alt="" />
-        <p class="mt-6 text-[#252748] font-semibold text-xl">
+        <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
           Referral bonuses
         </p>
         <p>
@@ -109,9 +111,9 @@
         </p>
       </div>
 
-      <div class="card bg-white md:w-[47%]">
+      <div class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white">
         <img src="@/assets/images/home.svg" alt="" />
-        <p class="mt-6 text-[#252748] font-semibold text-xl">
+        <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
           Best homes close to you
         </p>
         <p>
@@ -120,9 +122,9 @@
         </p>
       </div>
 
-      <div class="card bg-white md:w-[47%]">
+      <div class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white">
         <img src="@/assets/images/money.svg" alt="" />
-        <p class="mt-6 text-[#252748] font-semibold text-xl">
+        <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
           Secure payment options
         </p>
         <p>
@@ -135,7 +137,7 @@
 
   <!-- Section plans -->
   <section
-    class="plans !bg-[#F1F5F9] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row gap-10 md:gap-[131.8px]"
+    class="plans !bg-[#F1F5F9] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row md:space-x-[100px]"
   >
     <img
       src="@/assets/images/transaction.svg"
@@ -189,17 +191,31 @@
       You get to see and experience the best quality homes and property close to
       you. Click on one of the best properties below and enjoy
     </p>
-    <div class="flex flex-wrap gap-[28px] mt-[56px]">
+    <div class="flex flex-wrap gap-[28px] mt-[56px]" v-if="loading === false">
       <product-card
-        v-for="(product, index) in 6"
+        v-for="(product, index) in products"
         :key="index"
         :product="product"
-        class="w-[300px] relative"
+        class="w-[300px] relative grow"
       />
+    </div>
+    <div class="text-[#f35c35] text-xl mt-10 text-center" v-else>
+      <spinner />
     </div>
 
     <div class="mt-10 md:mt-16 flex justify-center">
-      <span class="secondary-button border-0">Load more</span>
+      <span
+        class="secondary-button border-0 cursor-pointer"
+        @click="loadMore"
+        v-if="perPage <= 6"
+        >Load more</span
+      >
+      <a
+        class="secondary-button border-0 cursor-pointer"
+        v-else
+        href="https://app.realvest.ng"
+        >See all</a
+      >
     </div>
   </section>
 
@@ -207,7 +223,7 @@
   <section
     class="!bg-[#FFF] py-[48px] px-[24px] md:px-[120px] md:py-[80px] md:flex-row gap-10 md:gap-[131.8px] overflow-scroll"
   >
-    <div class="flex flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row justify-between">
       <div class="md:w-[513px]">
         <div
           class="head-pill text-[#37445D] inline-block px-6 py-3 mb-4 border-2 border-[#f35c35] rounded-[32px] text-sm font-semibold"
@@ -225,9 +241,9 @@
       </p>
 
       <div
-        class="self-end text-[#f35c35] mt-10 md:mt-0 flex justify-end justify-self-end grow-[1]"
+        class="self-end text-[#f35c35] mt-10 md:mt-0 flex justify-end justify-self-end grow-0"
       >
-        <a href="#" class="font-semibold"> See all</a>
+        <a href="https://app.realvest.ng" class="font-semibold"> See all</a>
         <img src="@/assets/images/right-arrow.svg" alt="" />
       </div>
     </div>
@@ -236,7 +252,7 @@
     >
       <article-card
         class="self-start"
-        v-for="(product, i) in products"
+        v-for="(product, i) in articles"
         :product="product"
         :key="`article-${i}`"
       />
@@ -263,11 +279,15 @@
   </section>
 
   <section
-    class="plans !bg-[#fff] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row gap-10 md:gap-[187px]"
+    class="plans !bg-[#fff] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row gap-10 md:gap-[100px]"
   >
-    <img src="@/assets/images/FAQ.png" alt="" class="self-center w-[45%]" />
+    <img
+      src="@/assets/images/FAQ.png"
+      alt=""
+      class="md:w-1/2 w-full self-start object-cover"
+    />
 
-    <div class="self-center order-[-1] md:order-none">
+    <div class="self-center order-[-1] md:order-none w-full">
       <div
         class="head-pill text-[#37445D] inline-block px-6 py-3 mb-4 border-2 border-[#f35c35] rounded-[32px] text-sm font-semibold"
       >
@@ -305,40 +325,91 @@ import Article2 from '@/assets/images/article-2.png';
 import ReviewCard from '@/components/ReviewCard.vue';
 import Accordion from '@/components/Accordion.vue';
 import AppFooter from '@/components/AppFooter.vue';
+import Spinner from '@/components/Spinner.vue';
 
 export default {
-  components: { ProductCard, ArticleCard, ReviewCard, Accordion, AppFooter },
+  components: {
+    ProductCard,
+    ArticleCard,
+    ReviewCard,
+    Accordion,
+    AppFooter,
+    Spinner,
+  },
   data() {
     return {
-      products: [
+      products: [],
+      perPage: 6,
+      loading: false,
+      articles: [
         {
+          src: Article1,
           type: 'Investments',
           title:
             'Notable investments that contribute to long-term wealth accumulation',
           duration: '5 weeks ago',
           read: '10 mins read',
-          src: Article1,
         },
+
         {
+          src: Article2,
           type: 'Business',
           title:
             'Entrepreneurial opportunities suitable for young adults to explore',
           duration: '5 weeks ago',
           read: '10 mins read',
-          src: Article2,
         },
+
         {
+          src: Article1,
           type: 'Real Estate',
           title:
             'Promising properties poised for significant growth in the upcoming years',
           duration: '5 weeks ago',
           read: '10 mins read',
-          src: Article1,
         },
       ],
     };
   },
+
+  methods: {
+    async fetchData(perpage) {
+      this.loading = true;
+      this.error = null;
+
+      try {
+        const response = await fetch(
+          `https://sea-lion-app-95ko8.ondigitalocean.app/products?per_page=${perpage}&page=1`
+        );
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const jsonData = await response.json();
+        this.products = jsonData.data.records;
+        console.log(this.products);
+      } catch (error) {
+        this.error = `Error fetching data: ${error.message}`;
+      } finally {
+        this.loading = false;
+      }
+    },
+
+    loadMore() {
+      console.log('kenny');
+      this.perPage += 3;
+      this.fetchData(this.perPage);
+    },
+  },
+
+  mounted() {
+    this.fetchData(this.perPage);
+  },
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.card:hover .card-title {
+  color: #fff;
+}
+</style>

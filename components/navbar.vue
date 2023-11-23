@@ -2,11 +2,16 @@
   <div>
     <!-- Navbar -->
     <div
-      class="navbar py-8 px-[24px] md:px-[120px] background-blue flex justify-between"
+      class="navbar fixed w-full z-[9999999] py-8 px-[24px] md:px-[120px] background-blue flex justify-between"
     >
       <img
         src="@/assets/images/logo.svg"
-        class="w-[190px] h-[48px] object-cover"
+        class="w-[190px] h-[48px] hidden md:block object-cover"
+        alt=""
+      />
+      <img
+        src="@/assets/images/logo.svg"
+        class="w-[120px] md:hidden object-cover"
         alt=""
       />
 
@@ -36,12 +41,16 @@
     <!-- Sidebar (initially hidden) -->
     <div class="sidebar md:hidden" :class="{ active: isSidebarOpen }">
       <!-- Close button for the sidebar -->
-      <img
-        src="@/assets/images/logo.svg"
-        class="w-[190px] h-[48px] object-cover"
-        alt=""
-      />
-      <div class="close-btn" @click="closeSidebar">&times;</div>
+      <div class="flex justify-between">
+        <img
+          src="@/assets/images/logo.svg"
+          class="w-[190px] object-cover"
+          alt=""
+        />
+        <div class="!self-center" @click="closeSidebar">
+          <img src="@/assets/images/xmark.svg" alt="" />
+        </div>
+      </div>
 
       <!-- Sidebar Links -->
       <ul class="sidebar-links">
@@ -58,7 +67,7 @@
       </ul>
 
       <!-- Sidebar Buttons -->
-      <div class="flex gap-4 mt-12">
+      <div class="flex space-x-4 mt-12">
         <a href="#" class="secondary-button grow">Login</a>
         <a href="#" class="primary-button grow">Sign Up</a>
       </div>
@@ -94,7 +103,7 @@ export default {
   height: 100%;
   background-color: #252f48; /* Adjust as needed */
   transition: left 0.3s ease-in-out;
-  z-index: 999;
+  z-index: 9999999999;
   padding: 24px;
 }
 

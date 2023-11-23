@@ -8,16 +8,16 @@
     -webkit-text-stroke: 0.6px;
   }
   .font-family-1 {
-    font-family: 'font-kumbh', sans-serif !important;
+    font-family: 'Kumbh Sans', sans-serif !important;
   }
   .primary-button {
-    @apply border transition-all duration-500 text-sm px-6 py-[14px] text-center rounded-md border-[#f35c35]   bg-[#f35c35] text-white font-normal;
+    @apply border transition-all duration-500 text-sm px-6 py-[14px] text-center rounded-md border-[#f35c35]   bg-[#f35c35] text-white font-normal hover:bg-[#bd4020];
   }
   .secondary-button {
     @apply primary-button bg-[#fef3f1] dark:bg-[#fef3f1] border border-white dark:border-slate-700  dark:text-slate-400 hover:text-slate-100 hover:dark:text-slate-300  hover:bg-[#ffedea] hover:dark:border-slate-500 !text-[#f35c35];
   }
   .outline-button {
-    @apply secondary-button bg-transparent text-slate-800 dark:text-slate-300 hover:bg-slate-100 hover:text-slate-700 hover:dark:bg-slate-900 hover:dark:text-slate-200 transition-all duration-500;
+    @apply secondary-button bg-transparent font-bold !text-slate-800 dark:text-slate-300 hover:bg-[#fff] hover:text-slate-700 hover:dark:text-slate-200 transition-all duration-500;
   }
   .spinner-primary {
     @apply w-4 h-4 border-2 border-white border-b-[#f35c35] rounded-full inline-block animate-spin mr-2 align-middle;
