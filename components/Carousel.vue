@@ -61,7 +61,7 @@ export default {
           review:
             'Being new to the realm of real estate investment, this platform has simplified the learning process and enabled me to effectively seize the opportunity it presents.',
           name: 'Lilian Alex',
-          image: Review1,
+          // image: Review1,
         },
         {
           review:
