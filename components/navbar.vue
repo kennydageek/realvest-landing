@@ -2,18 +2,15 @@
   <div>
     <!-- Navbar -->
     <div
-      class="navbar fixed w-full z-[9999999] py-8 px-[24px] md:px-[120px] background-blue flex justify-between"
+      class="navbar fixed w-full z-[9999999] py-5 px-[24px] md:px-[120px] background-blue flex justify-between"
     >
-      <img
-        src="@/assets/images/logo.svg"
-        class="w-[190px] h-[48px] hidden md:block object-cover"
-        alt=""
-      />
-      <img
-        src="@/assets/images/logo.svg"
-        class="w-[120px] md:hidden object-cover"
-        alt=""
-      />
+      <div class="self-center">
+        <img
+          src="@/assets/images/logo.svg"
+          class="w-[120px] object-cover"
+          alt=""
+        />
+      </div>
 
       <!-- Navbar Links (hidden on mobile) -->
       <ul class="md:flex gap-6 self-center hidden">
@@ -44,7 +41,7 @@
       <div class="flex justify-between">
         <img
           src="@/assets/images/logo.svg"
-          class="w-[190px] object-cover"
+          class="w-[120px] object-cover"
           alt=""
         />
         <div class="!self-center" @click="closeSidebar">

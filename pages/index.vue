@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[110vh] md:h-[110vh] mt-10"
+    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[100vh] md:h-[110vh] mt-10"
   >
     <div class="text-center w-full md:w-[1121px] mx-auto px-6">
       <h1
@@ -27,7 +27,7 @@
             alt=""
         /></a>
       </div>
-      <div class="px-[24px] md:px-[120px] absolute top-[80%] md:top-[55%]">
+      <div class="px-[24px] md:px-[120px] absolute top-[90%] md:top-[55%]">
         <img
           src="@/assets/images/header-image-2.png"
           alt=""
@@ -191,7 +191,7 @@
       You get to see and experience the best quality homes and property close to
       you. Click on one of the best properties below and enjoy
     </p>
-    <div class="flex flex-wrap gap-[28px] mt-[56px]" v-if="loading === false">
+    <div class="flex flex-wrap gap-[28px] mt-[56px]">
       <product-card
         v-for="(product, index) in products"
         :key="index"
@@ -199,7 +199,7 @@
         class="w-[300px] relative grow"
       />
     </div>
-    <div class="text-[#f35c35] text-xl mt-10 text-center" v-else>
+    <div class="text-[#f35c35] text-xl mt-10 text-center" v-if="loading">
       <spinner />
     </div>
 
@@ -260,22 +260,33 @@
   </section>
 
   <section
-    class="!bg-[#252F48] py-[48px] px-[24px] md:px-[120px] md:py-[80px] md:flex-row gap-10 md:gap-[131.8px] overflow-scroll"
+    class="!bg-[#171D2C] py-[48px] px-[24px] md:px-[120px] md:py-[80px] md:flex-row gap-10 md:gap-[131.8px] overflow-hidden relative"
   >
-    <div class="text-center mb-[13.66px] relative">
-      <h2 class="text-[32px] md:text-[48px] text-[#fff] font-bold">
-        Our Happy Realtors
-      </h2>
-      <p class="text-white">Listen to what others are saying about us</p>
-    </div>
-    <img
-      src="@/assets/images/reviews-desktop.png"
-      alt=""
-      class="hidden md:block"
-    />
-    <img src="@/assets/images/testimonial.png" alt="" class="md:hidden" />
+    <div
+      class="mb-[13.66px] relative bg-no-repeat bg-cover bg-[url('@/assets/images/dotted-map.svg')]"
+    >
+      <div class="flex justify-between">
+        <div>
+          <h2 class="text-[32px] md:text-[48px] text-[#fff] font-bold">
+            Experience beyond our words
+          </h2>
+          <p class="text-white">
+            Listen to what our realtors and customers are saying about us
+          </p>
+        </div>
+      </div>
+      <div class="review-carousel flex justify-between gap-6 mt-[56px]">
+        <carousel class="w-full" />
 
-    <review-card class="hidden" />
+        <!-- Your review cards go here -->
+        <!-- <review-card
+          class=""
+          v-for="(review, i) in reviews"
+          :key="`review-${i}`"
+          :review="review"
+        /> -->
+      </div>
+    </div>
   </section>
 
   <section
@@ -323,9 +334,11 @@ import ArticleCard from '@/components/ArticleCard.vue';
 import Article1 from '@/assets/images/article-1.png';
 import Article2 from '@/assets/images/article-2.png';
 import ReviewCard from '@/components/ReviewCard.vue';
+
 import Accordion from '@/components/Accordion.vue';
 import AppFooter from '@/components/AppFooter.vue';
 import Spinner from '@/components/Spinner.vue';
+import Carousel from '@/components/Carousel.vue';
 
 export default {
   components: {
@@ -335,6 +348,7 @@ export default {
     Accordion,
     AppFooter,
     Spinner,
+    Carousel,
   },
   data() {
     return {
@@ -347,6 +361,24 @@ export default {
           type: 'Investments',
           title:
             'Notable investments that contribute to long-term wealth accumulation',
+          duration: '5 weeks ago',
+          read: '10 mins read',
+        },
+
+        {
+          src: Article2,
+          type: 'Business',
+          title:
+            'Entrepreneurial opportunities suitable for young adults to explore',
+          duration: '5 weeks ago',
+          read: '10 mins read',
+        },
+
+        {
+          src: Article1,
+          type: 'Real Estate',
+          title:
+            'Promising properties poised for significant growth in the upcoming years',
           duration: '5 weeks ago',
           read: '10 mins read',
         },
@@ -395,6 +427,20 @@ export default {
       }
     },
 
+    // Move the carousel to the left
+    moveCarouselLeft() {
+      const container = document.querySelector('.review-carousel');
+      const cardWidth = container.firstElementChild.clientWidth;
+      container.scrollLeft -= cardWidth * 3; // Move by the width of three cards
+    },
+
+    // Move the carousel to the right
+    moveCarouselRight() {
+      const container = document.querySelector('.review-carousel');
+      const cardWidth = container.firstElementChild.clientWidth;
+      container.scrollLeft += cardWidth * 3; // Move by the width of three cards
+    },
+
     loadMore() {
       console.log('kenny');
       this.perPage += 3;
@@ -411,5 +457,10 @@ export default {
 <style lang="scss" scoped>
 .card:hover .card-title {
   color: #fff;
+}
+
+.review-carousel {
+  display: flex;
+  overflow-x: hidden;
 }
 </style>
