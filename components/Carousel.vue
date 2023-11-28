@@ -66,7 +66,7 @@
 
 <script>
 import ReviewCard from '@/components/ReviewCard';
-import Review1 from '@/assets/images/lilian-alex.svg';
+import Review1 from '@/assets/images/Lilian-Alex.svg';
 import Review2 from '@/assets/images/avatar-ian.svg';
 import Review3 from '@/assets/images/kehinde-ajibade.svg';
 export default {
