@@ -29,6 +29,18 @@ const client_manifest = {
     "file": "arrow-left-disabled.2b7a8d51.svg",
     "src": "assets/images/arrow-left-disabled.svg"
   },
+  "assets/images/arrow-left-enabled.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "arrow-left-enabled.88d78df2.svg",
+    "src": "assets/images/arrow-left-enabled.svg"
+  },
+  "assets/images/arrow-right-disabled.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "arrow-right-disabled.ed3ed515.svg",
+    "src": "assets/images/arrow-right-disabled.svg"
+  },
   "assets/images/arrow-right-enabled.svg": {
     "resourceType": "image",
     "mimeType": "image/svg+xml",
@@ -187,7 +199,7 @@ const client_manifest = {
       "xmark.8aa16631.svg"
     ],
     "css": [],
-    "file": "default.71c4caad.js",
+    "file": "default.f3a0dd0f.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -222,7 +234,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.9ef4d96b.js",
+    "file": "error-404.ed400366.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -242,7 +254,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.a2768c80.js",
+    "file": "error-500.1287ca32.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -261,14 +273,14 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.ae94cf8f.js",
+    "file": "entry.f42f570f.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
   },
   "pages/index.css": {
     "resourceType": "style",
-    "file": "index.8abb82bb.css",
+    "file": "index.94ab1c81.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
@@ -282,7 +294,9 @@ const client_manifest = {
       "avatar-ian.66716691.svg",
       "kehinde-ajibade.12912e15.svg",
       "arrow-left-disabled.2b7a8d51.svg",
+      "arrow-left-enabled.88d78df2.svg",
       "arrow-right-enabled.b35540f4.svg",
+      "arrow-right-disabled.ed3ed515.svg",
       "down-arrow.555a7e1a.svg",
       "logo-variant.43a371cb.svg",
       "sms.e25c896b.svg",
@@ -301,15 +315,15 @@ const client_manifest = {
       "FAQ.d9ea9852.png"
     ],
     "css": [],
-    "file": "index.22c7ffb5.js",
+    "file": "index.3ef11cd6.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.8abb82bb.css": {
-    "file": "index.8abb82bb.css",
+  "index.94ab1c81.css": {
+    "file": "index.94ab1c81.css",
     "resourceType": "style"
   },
   "circle.4249f693.svg": {
@@ -347,8 +361,18 @@ const client_manifest = {
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
+  "arrow-left-enabled.88d78df2.svg": {
+    "file": "arrow-left-enabled.88d78df2.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
   "arrow-right-enabled.b35540f4.svg": {
     "file": "arrow-right-enabled.b35540f4.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
+  "arrow-right-disabled.ed3ed515.svg": {
+    "file": "arrow-right-disabled.ed3ed515.svg",
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
