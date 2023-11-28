@@ -24,13 +24,13 @@
         <a
           v-else
           href="https://app.realvest.ng"
-          class="outline-button grow text-gray-800 rounded-none rounded-l"
+          class="outline-button grow text-gray-800 rounded-none border border-gray-300 hover:border-gray-300 rounded-l py-[8px] px-[20px] font-medium"
         >
           Buy Now
         </a>
         <a
           href="https://app.realvest.ng"
-          class="outline-button grow text-grow-800 rounded-none rounded-r"
+          class="outline-button grow text-grow-800 font-medium rounded-none border border-gray-300 hover:border-gray-300 rounded-r py-[8px] px-[20px]"
           >Details</a
         >
       </div>

@@ -20,11 +20,26 @@
     <button @click="nextSlide" class="carousel-button">Next</button> -->
 
     <div
-      class="flex gap-2 justify-center mt-8 md:gap-6 md:absolute md:right-0 md:top-[40px] w-100"
+      class="flex justify-center mt-8 md:gap-6 md:absolute md:right-0 md:top-[40px] w-100"
     >
-      <div class="">
+      <!-- <div class="mr-2">
         <img
           src="@/assets/images/arrow-left-disabled.svg"
+          alt=""
+          @click="prevSlide"
+          class="cursor-pointer w-10"
+        />
+      </div> -->
+      <div class="mr-2">
+        <img
+          v-if="currentIndex === 0"
+          src="@/assets/images/arrow-left-disabled.svg"
+          alt=""
+          class="cursor-pointer w-10"
+        />
+        <img
+          v-else
+          src="@/assets/images/arrow-left-enabled.svg"
           alt=""
           @click="prevSlide"
           class="cursor-pointer w-10"
@@ -36,6 +51,12 @@
           src="@/assets/images/arrow-right-enabled.svg"
           alt=""
           @click="nextSlide"
+          class="cursor-pointer w-10"
+        />
+        <img
+          v-else
+          src="@/assets/images/arrow-right-disabled.svg"
+          alt=""
           class="cursor-pointer w-10"
         />
       </div>
@@ -108,7 +129,7 @@ export default {
       }
     },
     calculateSlidesPerPage() {
-      return window.innerWidth < 376
+      return window.innerWidth < 420
         ? (this.slidesPerPage = 1)
         : (this.slidesPerPage = 3);
     },

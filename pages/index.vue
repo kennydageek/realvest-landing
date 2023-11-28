@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[100vh] md:h-[110vh] mt-10"
+    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[70vh] md:h-[110vh] mt-10"
   >
     <div class="text-center w-full md:w-[1121px] mx-auto px-6">
       <h1
@@ -27,7 +27,7 @@
             alt=""
         /></a>
       </div>
-      <div class="px-[24px] md:px-[120px] absolute top-[90%] md:top-[55%]">
+      <div class="px-[24px] md:px-[120px] absolute top-[90%] md:top-[60%]">
         <img
           src="@/assets/images/header-image-2.png"
           alt=""
@@ -61,7 +61,7 @@
         accountability in everything we do
       </p>
 
-      <div class="mt-10 flex space-x-[47px] md:space-y-0 space-y-[47px]">
+      <div class="md:mt-10 flex space-x-[47px] md:space-y-0">
         <div class="self-end">
           <p class="text-[24px] md:text-[40px] text-[#252f48] font-bold">
             60K<span class="text-[#f35c35]">+</span>
@@ -85,10 +85,10 @@
       </div>
     </div>
     <div
-      class="second-div w-full md:w-[55%] flex flex-col md:flex-row flex-wrap self-start gap-8"
+      class="second-div w-full md:w-[55%] flex flex-col md:flex-row flex-wrap self-start md:gap-8"
     >
       <div
-        class="card space-y-[40px] md:space-y-0 bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white transition-colors"
+        class="card md:space-y-0 bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white transition-colors mb-6 md:mb-0"
       >
         <img src="@/assets/images/affordable.svg" alt="" />
         <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
@@ -100,7 +100,9 @@
         </p>
       </div>
 
-      <div class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white">
+      <div
+        class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white mb-6 md:mb-0"
+      >
         <img src="@/assets/images/referral.svg" alt="" />
         <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
           Referral bonuses
@@ -111,7 +113,9 @@
         </p>
       </div>
 
-      <div class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white">
+      <div
+        class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white mb-6 md:mb-0"
+      >
         <img src="@/assets/images/home.svg" alt="" />
         <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
           Best homes close to you
@@ -122,7 +126,9 @@
         </p>
       </div>
 
-      <div class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white">
+      <div
+        class="card bg-white md:w-[47%] hover:bg-[#f35c35] hover:text-white mb-6 md:mb-0"
+      >
         <img src="@/assets/images/money.svg" alt="" />
         <p class="mt-6 card-title text-[#252748] font-semibold text-xl">
           Secure payment options
@@ -152,29 +158,31 @@
         You have access to subscribe to the best plans easily
       </h1>
       <ul class="mt-6">
-        <li class="flex gap-2">
+        <li class="flex">
           <img src="@/assets/images/tick-circle.svg" alt="" />
           <p class="font-semibold">
             Select the the home you’d like to subscribe to
           </p>
         </li>
-        <li class="flex gap-2 mt-4">
+        <li class="flex mt-4">
           <img src="@/assets/images/tick-circle.svg" alt="" />
-          <p class="font-semibold">Select the plan best suitable to you</p>
+          <p class="font-semibold ml-2">Select the plan best suitable to you</p>
         </li>
-        <li class="flex gap-2 mt-4">
+        <li class="flex mt-4">
           <img src="@/assets/images/tick-circle.svg" alt="" />
-          <p class="font-semibold">
+          <p class="font-semibold ml-2">
             Enter duration of payment and number of units
           </p>
         </li>
-        <li class="flex gap-2 mt-4">
+        <li class="flex mt-4">
           <img src="@/assets/images/tick-circle.svg" alt="" />
-          <p class="font-semibold">Review your subscription details</p>
+          <p class="font-semibold ml-2">Review your subscription details</p>
         </li>
-        <li class="flex gap-2 mt-4">
+        <li class="flex mt-4">
           <img src="@/assets/images/tick-circle.svg" alt="" />
-          <p class="font-semibold">Make your payment and start your journey!</p>
+          <p class="font-semibold ml-2">
+            Make your payment and start your journey!
+          </p>
         </li>
       </ul>
     </div>
@@ -191,12 +199,12 @@
       You get to see and experience the best quality homes and property close to
       you. Click on one of the best properties below and enjoy
     </p>
-    <div class="flex flex-wrap gap-[28px] mt-[56px]">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
       <product-card
         v-for="(product, index) in products"
         :key="index"
         :product="product"
-        class="w-[300px] relative grow"
+        class="relative"
       />
     </div>
     <div class="text-[#f35c35] text-xl mt-10 text-center" v-if="loading">
@@ -322,7 +330,7 @@
   </section>
 
   <section
-    class="plans !bg-[#F1F5F9] justify-between py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-wrap md:flex-nowrap md:flex-row gap-10 md:gap-[187px]"
+    class="plans !bg-[#F1F5F9] justify-between py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-wrap md:flex-nowrap md:flex-row md:gap-[187px]"
   >
     <app-footer />
   </section>
