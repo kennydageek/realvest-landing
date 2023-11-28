@@ -14,10 +14,10 @@
 
       <!-- Navbar Links (hidden on mobile) -->
       <ul class="md:flex gap-6 self-center hidden">
-        <li class="p-3"><a href="#" class="nav-links">Home</a></li>
-        <li class="p-3"><a href="#" class="nav-links">About Us</a></li>
-        <li class="p-3"><a href="#" class="nav-links">Blog</a></li>
-        <li class="p-3"><a href="#" class="nav-links">FAQs</a></li>
+        <li class="p-3"><a href="#home" class="nav-links">Home</a></li>
+        <li class="p-3"><a href="#about" class="nav-links">About Us</a></li>
+        <li class="p-3"><a href="#blog" class="nav-links">Blog</a></li>
+        <li class="p-3"><a href="#FAQ" class="nav-links">FAQs</a></li>
       </ul>
 
       <!-- Navbar Buttons (hidden on mobile) -->

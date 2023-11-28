@@ -9,6 +9,7 @@
   }
   .font-family-1 {
     font-family: 'Kumbh Sans', sans-serif !important;
+    scroll-behavior: smooth;
   }
   .primary-button {
     @apply border transition-all duration-500 text-sm px-6 py-[14px] text-center rounded-md border-[#f35c35]   bg-[#f35c35] text-white font-normal hover:bg-[#bd4020];

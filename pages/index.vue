@@ -1,6 +1,7 @@
 <template>
   <div
-    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[70vh] md:h-[110vh] mt-10"
+    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[70vh] md:h-[110vh] mt-10 scroll-smooth"
+    id="home"
   >
     <div class="text-center w-full md:w-[1121px] mx-auto px-6">
       <h1
@@ -44,7 +45,8 @@
 
   <!-- Section about -->
   <section
-    class="mt-[200px] md:mt-[350px] px-[24px] md:px-[120px] pb-12 md:pb-[144px] flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-0"
+    class="py-[200px] md:mt-[350px] px-[24px] md:px-[120px] md:pb-[144px] flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-0"
+    id="about"
   >
     <div class="self-center md:w-[45%]">
       <div
@@ -160,7 +162,7 @@
       <ul class="mt-6">
         <li class="flex">
           <img src="@/assets/images/tick-circle.svg" alt="" />
-          <p class="font-semibold">
+          <p class="font-semibold ml-2">
             Select the the home you’d like to subscribe to
           </p>
         </li>
@@ -230,6 +232,7 @@
   <!-- Section blogs -->
   <section
     class="!bg-[#FFF] py-[48px] px-[24px] md:px-[120px] md:py-[80px] md:flex-row gap-10 md:gap-[131.8px] overflow-scroll"
+    id="blog"
   >
     <div class="flex flex-col md:flex-row justify-between">
       <div class="md:w-[513px]">
@@ -299,6 +302,7 @@
 
   <section
     class="plans !bg-[#fff] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row gap-10 md:gap-[100px]"
+    id="FAQ"
   >
     <img
       src="@/assets/images/FAQ.png"

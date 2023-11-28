@@ -20,10 +20,10 @@
   <div class="company self-start md:basis-40">
     <h1 class="text-[#252F48] md:text-xl font-bold">Company</h1>
     <div class="links mt-4 font-medium">
-      <a class="block mt-6">Home</a>
-      <a class="block mt-4">About Us</a>
-      <a class="block mt-4">Blog</a>
-      <a class="block mt-4">FAQs</a>
+      <a class="block mt-6" href="#home">Home</a>
+      <a class="block mt-4" href="#about">About Us</a>
+      <a class="block mt-4" href="#blog">Blog</a>
+      <a class="block mt-4" href="#FAQ">FAQs</a>
     </div>
   </div>
 
@@ -41,7 +41,9 @@
     <h1 class="text-[#252F48] md:text-xl font-bold">Legal</h1>
     <div class="links mt-4 font-medium">
       <a class="block mt-6">Privacy Policy</a>
-      <a class="block mt-4">Terms & Conditions</a>
+      <router-link class="block mt-4" to="/terms"
+        >Terms & Conditions</router-link
+      >
     </div>
     <!-- </div> -->
   </div>
