@@ -14,7 +14,7 @@
 
       <!-- Navbar Links (hidden on mobile) -->
       <ul class="md:flex gap-6 self-center hidden">
-        <li class="p-3"><a href="#home" class="nav-links">Home</a></li>
+        <li class="p-3"><a href="/" class="nav-links">Home</a></li>
         <li class="p-3"><a href="#about" class="nav-links">About Us</a></li>
         <li class="p-3"><a href="#blog" class="nav-links">Blog</a></li>
         <li class="p-3"><a href="#FAQ" class="nav-links">FAQs</a></li>
@@ -22,8 +22,16 @@
 
       <!-- Navbar Buttons (hidden on mobile) -->
       <div class="self-center gap-4 hidden md:flex">
-        <a href="#" class="secondary-button self-center">Login</a>
-        <a href="#" class="primary-button self-center">Sign Up</a>
+        <a
+          href="https://app.realvest.ng/login"
+          class="secondary-button self-center"
+          >Login</a
+        >
+        <a
+          href="https://app.realvest.ng/register"
+          class="primary-button self-center"
+          >Sign Up</a
+        >
       </div>
 
       <!-- Hamburger Menu (visible on mobile) -->
@@ -51,22 +59,26 @@
 
       <!-- Sidebar Links -->
       <ul class="sidebar-links">
-        <li><a href="#" class="nav-links" @click="closeSidebar">Home</a></li>
+        <li><a href="" class="nav-links" @click="closeSidebar">Home</a></li>
         <li class="mt-4" @click="closeSidebar">
-          <a href="#" class="nav-links">About Us</a>
+          <a href="#about" class="nav-links">About Us</a>
         </li>
         <li class="mt-4" @click="closeSidebar">
-          <a href="#" class="nav-links">Blog</a>
+          <a href="#blog" class="nav-links">Blog</a>
         </li>
         <li class="mt-4" @click="closeSidebar">
-          <a href="#" class="nav-links">FAQs</a>
+          <a href="#FAQ" class="nav-links">FAQs</a>
         </li>
       </ul>
 
       <!-- Sidebar Buttons -->
       <div class="flex space-x-4 mt-12">
-        <a href="#" class="secondary-button grow">Login</a>
-        <a href="#" class="primary-button grow">Sign Up</a>
+        <a href="https://app.realvest.ng/login" class="secondary-button grow"
+          >Login</a
+        >
+        <a href="https://app.realvest.ng/register" class="primary-button grow"
+          >Sign Up</a
+        >
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <template>
   <section
-    class="plans !bg-[#fff] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row gap-10 md:gap-[100px]"
+    class="plans !bg-[#fff] py-[48px] px-[24px] md:px-[120px] md:py-[87px] flex flex-col md:flex-row gap-10 md:gap-[100px] mt-10"
     id="FAQ"
   >
     <div>

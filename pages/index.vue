@@ -18,7 +18,7 @@
       </p>
       <div class="cta mt-10">
         <a
-          href="#"
+          href="https://app.realvest.ng/register"
           class="primary-button px-8 rounded-[12px] inline-flex space-x-[10px] justify-center self-center"
         >
           <p class="font-bold text-[16px] self-center">Get Started</p>
@@ -45,7 +45,7 @@
 
   <!-- Section about -->
   <section
-    class="py-[200px] md:mt-[350px] px-[24px] md:px-[120px] md:pb-[144px] flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-0"
+    class="py-[200px] pb-[100px] md:py-[200px] md:mt-[350px] px-[24px] md:px-[120px] md:pb-[144px] flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-0"
     id="about"
   >
     <div class="self-center md:w-[45%]">
