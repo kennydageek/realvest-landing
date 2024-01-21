@@ -103,14 +103,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.navbar {
+  background: rgba(22, 47, 72, 0.7);
+  backdrop-filter: blur(10px);
+}
 /* Add styles for the sidebar */
 .sidebar {
   position: fixed;
   top: 0;
-  left: -500px; /* Initially off-screen */
+  left: -700px; /* Initially off-screen */
   width: 100%;
   height: 100%;
-  background-color: #252f48; /* Adjust as needed */
+  background: rgba(22, 47, 72, 0.3);
+  backdrop-filter: blur(10px); /* Adjust as needed */
   transition: left 0.3s ease-in-out;
   z-index: 9999999999;
   padding: 24px;

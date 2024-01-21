@@ -22,7 +22,7 @@
     <div class="links mt-4 font-medium">
       <a class="block mt-6" href="#home">Home</a>
       <a class="block mt-4" href="#about">About Us</a>
-      <a class="block mt-4" href="#blog">Blog</a>
+      <!-- <a class="block mt-4" href="#blog">Blog</a> -->
       <a class="block mt-4" href="#FAQ">FAQs</a>
     </div>
   </div>
@@ -30,10 +30,19 @@
   <div class="company self-start md:basis-40 ml-10 md:ml-0 mr-10 md:mr-0">
     <h1 class="text-[#252F48] md:text-xl font-bold">Social media</h1>
     <div class="links mt-4 font-medium">
-      <a class="block mt-6">Twitter</a>
-      <a class="block mt-4">Facebook</a>
-      <a class="block mt-4">LinkedIn</a>
-      <a class="block mt-4">Instagram</a>
+      <a class="block mt-4" href="https://twitter.com/pertinencegroup"
+        >Twitter</a
+      >
+      <a
+        class="block mt-6"
+        href="https://web.facebook.com/profile.php?id=412976838887916&amp;ref=br_rs"
+        target="_blank"
+        >Facebook</a
+      >
+      <!-- <a class="block mt-4">LinkedIn</a> -->
+      <a class="block mt-4" href="https://www.instagram.com/pertinencegroup/"
+        >Instagram</a
+      >
     </div>
   </div>
 

@@ -66,7 +66,7 @@
 
 <script>
 import ReviewCard from '@/components/ReviewCard';
-import Review1 from '@/assets/images/Lilian-Alex.svg';
+import Review1 from '@/assets/images/lilian-alex.svg';
 import Review2 from '@/assets/images/avatar-ian.svg';
 import Review3 from '@/assets/images/kehinde-ajibade.svg';
 export default {
@@ -80,36 +80,33 @@ export default {
       reviews: [
         {
           review:
-            'Being new to the realm of real estate investment, this platform has simplified the learning process and enabled me to effectively seize the opportunity it presents.',
-          name: 'Lilian Alex',
+            'Realvest enhances saving for home owners I hope this opportunity for home ownership relaunches.',
+          name: 'John Adepoju',
           image: Review1,
         },
         {
-          review:
-            'I learned about this product through a friend, and I have been amazed by its capabilities. It encompasses everything I need to elevate my endeavors.',
-          name: 'Ian Hendrix',
+          review: 'It is a safe and trusted means of saving.',
+          name: 'Ayeyemi Temitope',
           image: Review2,
         },
 
         {
-          review:
-            "'Initially skeptical about using this app, I was pleasantly surprised by the outcome. I will soon be acquiring my home, and I couldn't be happier.'",
-          name: 'Kehinde ajibade',
+          review: 'Really impressed, well done to the team',
+          name: 'Kehinde Ajibade',
           image: Review3,
         },
         {
-          review:
-            'I learned about this product through a friend, and I have been amazed by its capabilities. It encompasses everything I need to elevate my endeavors.',
-          name: 'Ian Hendrix',
+          review: 'Good customer service, keep it up',
+          name: 'Oladayo Adeniyi',
           image: Review2,
         },
 
-        {
-          review:
-            "'Initially skeptical about using this app, I was pleasantly surprised by the outcome. I will soon be acquiring my home, and I couldn't be happier.'",
-          name: 'Kehinde ajibade',
-          image: Review3,
-        },
+        // {
+        //   review:
+        //     "'Initially skeptical about using this app, I was pleasantly surprised by the outcome. I will soon be acquiring my home, and I couldn't be happier.'",
+        //   name: 'Kehinde ajibade',
+        //   image: Review3,
+        // },
       ],
     };
   },

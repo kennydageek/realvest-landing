@@ -1,11 +1,11 @@
 <template>
   <div
-    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[70vh] md:h-[110vh] mt-10 scroll-smooth"
+    class="py-20 background-blue bg-[url('@/assets/images/vector.svg')] object-cover bg-no-repeat bg-center relative h-[80vh] !md:h-[110vh] mt-10 scroll-smooth"
     id="home"
   >
-    <div class="text-center w-full md:w-[1121px] mx-auto px-6">
+    <div class="text-center w-full md:w-[1121px] mx-auto px-6 md:mt-10">
       <h1
-        class="text-white font-bold text-[40px] md:text-[72px] leading-[56px] md:leading-[80px]"
+        class="text-white font-bold text-[32px] md:text-[72px] leading-[36px] md:leading-[80px]"
       >
         Explore the finest plans to acquire your dream home
       </h1>
@@ -28,7 +28,9 @@
             alt=""
         /></a>
       </div>
-      <div class="px-[24px] md:px-[120px] absolute top-[90%] md:top-[60%]">
+      <div
+        class="left-[50%] w-[80%] translate-x-[-50%] absolute top-[90%] md:top-[60%]"
+      >
         <img
           src="@/assets/images/header-image-2.png"
           alt=""
@@ -45,7 +47,7 @@
 
   <!-- Section about -->
   <section
-    class="py-[200px] pb-[100px] md:py-[200px] md:mt-[350px] px-[24px] md:px-[120px] md:pb-[144px] flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-0"
+    class="py-[200px] pb-[100px] md:py-[120px] md:mt-[350px] px-[24px] md:px-[120px] md:pb-[144px] flex flex-col md:flex-row md:space-x-[50px] space-y-[50px] md:space-y-0"
     id="about"
   >
     <div class="self-center md:w-[45%]">
@@ -54,16 +56,18 @@
       >
         <p>ABOUT US</p>
       </div>
-      <h1 class="text-[#252F48] font-bold text-[32px] md:text-[48px]">
+      <h1
+        class="text-[#252F48] font-bold mb-4 leading-[40px] md:leading-[60px] text-[32px] md:text-[48px]"
+      >
         Here’s what we offer at<span class="text-[#f35c35]"> Realvest</span>
       </h1>
-      <p class="text-[16px] font-[500] md:font-semibold md:w-[90%]">
+      <p class="text-[16px] font-[500] mb-4 md:font-semibold md:w-[90%]">
         We understand the significance of trust when it comes to real estate
         investment. That's why we prioritize transparency, reliability, and
         accountability in everything we do
       </p>
 
-      <div class="md:mt-10 flex space-x-[47px] md:space-y-0">
+      <div class="md:mt-5 flex space-x-[47px] md:space-y-0">
         <div class="self-end">
           <p class="text-[24px] md:text-[40px] text-[#252f48] font-bold">
             60K<span class="text-[#f35c35]">+</span>
@@ -155,33 +159,53 @@
 
     <div class="self-center">
       <h1
-        class="text-[32px] leading-[48px] md:text-[48px] text-[#252F48] font-bold md:leading-[64px]"
+        class="text-[32px] leading-[38px] md:text-[48px] text-[#252F48] font-bold md:leading-[56px]"
       >
         You have access to subscribe to the best plans easily
       </h1>
       <ul class="mt-6">
         <li class="flex">
-          <img src="@/assets/images/tick-circle.svg" alt="" />
+          <img
+            src="@/assets/images/tick-circle.svg"
+            class="self-start"
+            alt=""
+          />
           <p class="font-semibold ml-2">
             Select the the home you’d like to subscribe to
           </p>
         </li>
         <li class="flex mt-4">
-          <img src="@/assets/images/tick-circle.svg" alt="" />
+          <img
+            src="@/assets/images/tick-circle.svg"
+            class="self-start"
+            alt=""
+          />
           <p class="font-semibold ml-2">Select the plan best suitable to you</p>
         </li>
         <li class="flex mt-4">
-          <img src="@/assets/images/tick-circle.svg" alt="" />
+          <img
+            src="@/assets/images/tick-circle.svg"
+            class="self-start"
+            alt=""
+          />
           <p class="font-semibold ml-2">
             Enter duration of payment and number of units
           </p>
         </li>
         <li class="flex mt-4">
-          <img src="@/assets/images/tick-circle.svg" alt="" />
+          <img
+            src="@/assets/images/tick-circle.svg"
+            class="self-start"
+            alt=""
+          />
           <p class="font-semibold ml-2">Review your subscription details</p>
         </li>
         <li class="flex mt-4">
-          <img src="@/assets/images/tick-circle.svg" alt="" />
+          <img
+            src="@/assets/images/tick-circle.svg"
+            class="self-start"
+            alt=""
+          />
           <p class="font-semibold ml-2">
             Make your payment and start your journey!
           </p>
@@ -230,7 +254,7 @@
   </section>
 
   <!-- Section blogs -->
-  <section
+  <!-- <section
     class="!bg-[#FFF] py-[48px] px-[24px] md:px-[120px] md:py-[80px] md:flex-row gap-10 md:gap-[131.8px] overflow-scroll"
     id="blog"
   >
@@ -268,7 +292,7 @@
         :key="`article-${i}`"
       />
     </div>
-  </section>
+  </section> -->
 
   <section
     class="!bg-[#171D2C] py-[48px] px-[24px] md:px-[120px] md:py-[80px] md:flex-row gap-10 md:gap-[131.8px] overflow-hidden relative"
@@ -423,7 +447,7 @@ export default {
 
       try {
         const response = await fetch(
-          `https://sea-lion-app-95ko8.ondigitalocean.app/products?per_page=${perpage}&page=1`
+          `https://api-latest.realvest.ng/products?per_page=${perpage}&page=1`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -474,5 +498,17 @@ export default {
 .review-carousel {
   display: flex;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 390px) {
+  #home {
+    height: 60vh !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #home {
+    height: 110vh !important;
+  }
 }
 </style>
