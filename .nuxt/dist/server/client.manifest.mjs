@@ -1,15 +1,37 @@
 export default {
+  "_AppFooter.a9efc6e3.js": {
+    "resourceType": "script",
+    "module": true,
+    "assets": [
+      "logo-variant.43a371cb.svg",
+      "sms.e25c896b.svg",
+      "call.1be1e48f.svg"
+    ],
+    "file": "AppFooter.a9efc6e3.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "logo-variant.43a371cb.svg": {
+    "file": "logo-variant.43a371cb.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
+  "sms.e25c896b.svg": {
+    "file": "sms.e25c896b.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
+  "call.1be1e48f.svg": {
+    "file": "call.1be1e48f.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
   "assets/images/FAQ.png": {
     "resourceType": "image",
     "mimeType": "image/png",
     "file": "FAQ.d9ea9852.png",
     "src": "assets/images/FAQ.png"
-  },
-  "assets/images/Lilian-Alex.svg": {
-    "resourceType": "image",
-    "mimeType": "image/svg+xml",
-    "file": "Lilian-Alex.899a9450.svg",
-    "src": "assets/images/Lilian-Alex.svg"
   },
   "assets/images/affordable.svg": {
     "resourceType": "image",
@@ -113,6 +135,12 @@ export default {
     "file": "kehinde-ajibade.12912e15.svg",
     "src": "assets/images/kehinde-ajibade.svg"
   },
+  "assets/images/lilian-alex.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "lilian-alex.899a9450.svg",
+    "src": "assets/images/lilian-alex.svg"
+  },
   "assets/images/logo-variant.svg": {
     "resourceType": "image",
     "mimeType": "image/svg+xml",
@@ -142,12 +170,6 @@ export default {
     "mimeType": "image/svg+xml",
     "file": "referral.004244e4.svg",
     "src": "assets/images/referral.svg"
-  },
-  "assets/images/right-arrow.svg": {
-    "resourceType": "image",
-    "mimeType": "image/svg+xml",
-    "file": "right-arrow.98728c7e.svg",
-    "src": "assets/images/right-arrow.svg"
   },
   "assets/images/sms.svg": {
     "resourceType": "image",
@@ -187,7 +209,7 @@ export default {
   },
   "layouts/default.css": {
     "resourceType": "style",
-    "file": "default.a9367e2f.css",
+    "file": "default.9f735349.css",
     "src": "layouts/default.css"
   },
   "layouts/default.vue": {
@@ -199,15 +221,15 @@ export default {
       "xmark.8aa16631.svg"
     ],
     "css": [],
-    "file": "default.f3a0dd0f.js",
+    "file": "default.6b857597.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "layouts/default.vue"
   },
-  "default.a9367e2f.css": {
-    "file": "default.a9367e2f.css",
+  "default.9f735349.css": {
+    "file": "default.9f735349.css",
     "resourceType": "style"
   },
   "logo.b6e3746f.svg": {
@@ -234,7 +256,7 @@ export default {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.ed400366.js",
+    "file": "error-404.303aebff.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -254,7 +276,7 @@ export default {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.1287ca32.js",
+    "file": "error-500.4cb2dcd3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -273,24 +295,23 @@ export default {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.f42f570f.js",
+    "file": "entry.4da633bf.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
   },
   "pages/index.css": {
     "resourceType": "style",
-    "file": "index.94ab1c81.css",
+    "file": "index.80c0545c.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
     "assets": [
-      "circle.4249f693.svg",
       "star-rate.51bad527.svg",
       "format-quote.1171d0d0.svg",
-      "Lilian-Alex.899a9450.svg",
+      "lilian-alex.899a9450.svg",
       "avatar-ian.66716691.svg",
       "kehinde-ajibade.12912e15.svg",
       "arrow-left-disabled.2b7a8d51.svg",
@@ -298,9 +319,7 @@ export default {
       "arrow-right-enabled.b35540f4.svg",
       "arrow-right-disabled.ed3ed515.svg",
       "down-arrow.555a7e1a.svg",
-      "logo-variant.43a371cb.svg",
-      "sms.e25c896b.svg",
-      "call.1be1e48f.svg",
+      "circle.4249f693.svg",
       "article-1.1f5f97da.png",
       "article-2.ddb5e3e6.png",
       "arrow-circle-right.57455966.svg",
@@ -311,25 +330,20 @@ export default {
       "money.5e076cf6.svg",
       "transaction.fad4b514.svg",
       "tick-circle.8be52297.svg",
-      "right-arrow.98728c7e.svg",
       "FAQ.d9ea9852.png"
     ],
     "css": [],
-    "file": "index.3ef11cd6.js",
+    "file": "index.ce43777d.js",
     "imports": [
-      "node_modules/nuxt/dist/app/entry.js"
+      "node_modules/nuxt/dist/app/entry.js",
+      "_AppFooter.a9efc6e3.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.94ab1c81.css": {
-    "file": "index.94ab1c81.css",
+  "index.80c0545c.css": {
+    "file": "index.80c0545c.css",
     "resourceType": "style"
-  },
-  "circle.4249f693.svg": {
-    "file": "circle.4249f693.svg",
-    "resourceType": "image",
-    "mimeType": "image/svg+xml"
   },
   "star-rate.51bad527.svg": {
     "file": "star-rate.51bad527.svg",
@@ -341,8 +355,8 @@ export default {
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
-  "Lilian-Alex.899a9450.svg": {
-    "file": "Lilian-Alex.899a9450.svg",
+  "lilian-alex.899a9450.svg": {
+    "file": "lilian-alex.899a9450.svg",
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
@@ -381,18 +395,8 @@ export default {
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
-  "logo-variant.43a371cb.svg": {
-    "file": "logo-variant.43a371cb.svg",
-    "resourceType": "image",
-    "mimeType": "image/svg+xml"
-  },
-  "sms.e25c896b.svg": {
-    "file": "sms.e25c896b.svg",
-    "resourceType": "image",
-    "mimeType": "image/svg+xml"
-  },
-  "call.1be1e48f.svg": {
-    "file": "call.1be1e48f.svg",
+  "circle.4249f693.svg": {
+    "file": "circle.4249f693.svg",
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
@@ -446,14 +450,20 @@ export default {
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
-  "right-arrow.98728c7e.svg": {
-    "file": "right-arrow.98728c7e.svg",
-    "resourceType": "image",
-    "mimeType": "image/svg+xml"
-  },
   "FAQ.d9ea9852.png": {
     "file": "FAQ.d9ea9852.png",
     "resourceType": "image",
     "mimeType": "image/png"
+  },
+  "pages/terms.vue": {
+    "resourceType": "script",
+    "module": true,
+    "file": "terms.7ce846ff.js",
+    "imports": [
+      "_AppFooter.a9efc6e3.js",
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "pages/terms.vue"
   }
 }

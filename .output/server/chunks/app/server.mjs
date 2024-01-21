@@ -320,7 +320,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-17ed54e7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-0a7c045e.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "terms",
+    path: "/terms",
+    meta: {},
+    alias: [],
+    redirect: void 0,
+    component: () => import('./_nuxt/terms-1c19c6e6.mjs').then((m) => m.default || m)
   }
 ];
 const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }], "link": [], "style": [], "script": [], "noscript": [] };
@@ -686,7 +694,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  default: () => import('./_nuxt/default-d92bc625.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-83465ded.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",
