@@ -49,7 +49,7 @@
   <div class="company self-start md:basis-40 md:ml-0 mt-10 md:mt-0">
     <h1 class="text-[#252F48] md:text-xl font-bold">Legal</h1>
     <div class="links mt-4 font-medium">
-      <a class="block mt-6">Privacy Policy</a>
+      <nuxt-link to="/privacy" class="block mt-6">Privacy Policy</nuxt-link>
       <router-link class="block mt-4" to="/terms"
         >Terms & Conditions</router-link
       >
