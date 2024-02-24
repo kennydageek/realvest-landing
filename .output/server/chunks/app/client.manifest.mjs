@@ -1,5 +1,10 @@
 const client_manifest = {
-  "_AppFooter.a9efc6e3.js": {
+  "Spinner.css": {
+    "resourceType": "style",
+    "file": "Spinner.0e967719.css",
+    "src": "Spinner.css"
+  },
+  "_AppFooter.56203127.js": {
     "resourceType": "script",
     "module": true,
     "assets": [
@@ -7,8 +12,9 @@ const client_manifest = {
       "sms.e25c896b.svg",
       "call.1be1e48f.svg"
     ],
-    "file": "AppFooter.a9efc6e3.js",
+    "file": "AppFooter.56203127.js",
     "imports": [
+      "_nuxt-link.3adf5d24.js",
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
@@ -27,11 +33,58 @@ const client_manifest = {
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
+  "_BlogCard.89af89a3.js": {
+    "resourceType": "script",
+    "module": true,
+    "file": "BlogCard.89af89a3.js",
+    "imports": [
+      "_nuxt-link.3adf5d24.js",
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "_Spinner.9b9ac8b7.js": {
+    "resourceType": "script",
+    "module": true,
+    "css": [
+      "Spinner.0e967719.css"
+    ],
+    "file": "Spinner.9b9ac8b7.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
+  "Spinner.0e967719.css": {
+    "file": "Spinner.0e967719.css",
+    "resourceType": "style"
+  },
+  "_browser.7c54f512.js": {
+    "resourceType": "script",
+    "module": true,
+    "file": "browser.7c54f512.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "isDynamicEntry": true
+  },
+  "_nuxt-link.3adf5d24.js": {
+    "resourceType": "script",
+    "module": true,
+    "file": "nuxt-link.3adf5d24.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
+  },
   "assets/images/FAQ.png": {
     "resourceType": "image",
     "mimeType": "image/png",
     "file": "FAQ.d9ea9852.png",
     "src": "assets/images/FAQ.png"
+  },
+  "assets/images/Lilian-Alex.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "Lilian-Alex.899a9450.svg",
+    "src": "assets/images/Lilian-Alex.svg"
   },
   "assets/images/affordable.svg": {
     "resourceType": "image",
@@ -57,6 +110,12 @@ const client_manifest = {
     "file": "arrow-left-enabled.88d78df2.svg",
     "src": "assets/images/arrow-left-enabled.svg"
   },
+  "assets/images/arrow-left.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "arrow-left.4ad8147c.svg",
+    "src": "assets/images/arrow-left.svg"
+  },
   "assets/images/arrow-right-disabled.svg": {
     "resourceType": "image",
     "mimeType": "image/svg+xml",
@@ -68,6 +127,18 @@ const client_manifest = {
     "mimeType": "image/svg+xml",
     "file": "arrow-right-enabled.b35540f4.svg",
     "src": "assets/images/arrow-right-enabled.svg"
+  },
+  "assets/images/arrow-right.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "arrow-right.6bfb597d.svg",
+    "src": "assets/images/arrow-right.svg"
+  },
+  "assets/images/arrow-up-right.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "arrow-up-right.66a162c5.svg",
+    "src": "assets/images/arrow-up-right.svg"
   },
   "assets/images/article-1.png": {
     "resourceType": "image",
@@ -92,6 +163,12 @@ const client_manifest = {
     "mimeType": "image/svg+xml",
     "file": "call.1be1e48f.svg",
     "src": "assets/images/call.svg"
+  },
+  "assets/images/caret-left.svg": {
+    "resourceType": "image",
+    "mimeType": "image/svg+xml",
+    "file": "caret-left.d02520f2.svg",
+    "src": "assets/images/caret-left.svg"
   },
   "assets/images/circle.svg": {
     "resourceType": "image",
@@ -135,12 +212,6 @@ const client_manifest = {
     "file": "kehinde-ajibade.12912e15.svg",
     "src": "assets/images/kehinde-ajibade.svg"
   },
-  "assets/images/lilian-alex.svg": {
-    "resourceType": "image",
-    "mimeType": "image/svg+xml",
-    "file": "lilian-alex.899a9450.svg",
-    "src": "assets/images/lilian-alex.svg"
-  },
   "assets/images/logo-variant.svg": {
     "resourceType": "image",
     "mimeType": "image/svg+xml",
@@ -164,6 +235,12 @@ const client_manifest = {
     "mimeType": "image/svg+xml",
     "file": "money.5e076cf6.svg",
     "src": "assets/images/money.svg"
+  },
+  "assets/images/peeeps.png": {
+    "resourceType": "image",
+    "mimeType": "image/png",
+    "file": "peeeps.ff2a0454.png",
+    "src": "assets/images/peeeps.png"
   },
   "assets/images/referral.svg": {
     "resourceType": "image",
@@ -209,7 +286,7 @@ const client_manifest = {
   },
   "layouts/default.css": {
     "resourceType": "style",
-    "file": "default.9f735349.css",
+    "file": "default.3666c7e5.css",
     "src": "layouts/default.css"
   },
   "layouts/default.vue": {
@@ -221,15 +298,16 @@ const client_manifest = {
       "xmark.8aa16631.svg"
     ],
     "css": [],
-    "file": "default.6b857597.js",
+    "file": "default.1bb6dc93.js",
     "imports": [
+      "_nuxt-link.3adf5d24.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
     "src": "layouts/default.vue"
   },
-  "default.9f735349.css": {
-    "file": "default.9f735349.css",
+  "default.3666c7e5.css": {
+    "file": "default.3666c7e5.css",
     "resourceType": "style"
   },
   "logo.b6e3746f.svg": {
@@ -256,8 +334,9 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-404.303aebff.js",
+    "file": "error-404.f54ecbab.js",
     "imports": [
+      "_nuxt-link.3adf5d24.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -276,7 +355,7 @@ const client_manifest = {
     "resourceType": "script",
     "module": true,
     "css": [],
-    "file": "error-500.4cb2dcd3.js",
+    "file": "error-500.cbc8996d.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -287,22 +366,118 @@ const client_manifest = {
     "file": "error-500.e798523c.css",
     "resourceType": "style"
   },
+  "node_modules/@sanity/client/dist/_chunks/stegaEncodeSourceMap-De3F_oJN.js": {
+    "resourceType": "script",
+    "module": true,
+    "file": "stegaEncodeSourceMap-De3F_oJN.b4eaf410.js",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@sanity/client/dist/_chunks/stegaEncodeSourceMap-De3F_oJN.js"
+  },
+  "node_modules/nuxt/dist/app/entry.css": {
+    "resourceType": "style",
+    "file": "entry.62d17c53.css",
+    "src": "node_modules/nuxt/dist/app/entry.css"
+  },
   "node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
+    "css": [
+      "entry.62d17c53.css"
+    ],
     "dynamicImports": [
       "layouts/default.vue",
+      "node_modules/@sanity/client/dist/_chunks/stegaEncodeSourceMap-De3F_oJN.js",
+      "_browser.7c54f512.js",
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.4da633bf.js",
+    "file": "entry.653a8dcc.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
   },
+  "entry.62d17c53.css": {
+    "file": "entry.62d17c53.css",
+    "resourceType": "style"
+  },
+  "pages/blog/[id].css": {
+    "resourceType": "style",
+    "file": "_id_.85463c60.css",
+    "src": "pages/blog/[id].css"
+  },
+  "pages/blog/[id].vue": {
+    "resourceType": "script",
+    "module": true,
+    "assets": [
+      "caret-left.d02520f2.svg"
+    ],
+    "css": [],
+    "file": "_id_.4d67d00d.js",
+    "imports": [
+      "_Spinner.9b9ac8b7.js",
+      "_nuxt-link.3adf5d24.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_BlogCard.89af89a3.js",
+      "_AppFooter.56203127.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "pages/blog/[id].vue"
+  },
+  "_id_.85463c60.css": {
+    "file": "_id_.85463c60.css",
+    "resourceType": "style"
+  },
+  "caret-left.d02520f2.svg": {
+    "file": "caret-left.d02520f2.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
+  "pages/blog/index.vue": {
+    "resourceType": "script",
+    "module": true,
+    "assets": [
+      "arrow-up-right.66a162c5.svg",
+      "arrow-left.4ad8147c.svg",
+      "arrow-right.6bfb597d.svg",
+      "peeeps.ff2a0454.png"
+    ],
+    "file": "index.484460ec.js",
+    "imports": [
+      "_Spinner.9b9ac8b7.js",
+      "_nuxt-link.3adf5d24.js",
+      "_BlogCard.89af89a3.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_AppFooter.56203127.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "pages/blog/index.vue"
+  },
+  "arrow-up-right.66a162c5.svg": {
+    "file": "arrow-up-right.66a162c5.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
+  "arrow-left.4ad8147c.svg": {
+    "file": "arrow-left.4ad8147c.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
+  "arrow-right.6bfb597d.svg": {
+    "file": "arrow-right.6bfb597d.svg",
+    "resourceType": "image",
+    "mimeType": "image/svg+xml"
+  },
+  "peeeps.ff2a0454.png": {
+    "file": "peeeps.ff2a0454.png",
+    "resourceType": "image",
+    "mimeType": "image/png"
+  },
   "pages/index.css": {
     "resourceType": "style",
-    "file": "index.80c0545c.css",
+    "file": "index.382c6534.css",
     "src": "pages/index.css"
   },
   "pages/index.vue": {
@@ -311,7 +486,7 @@ const client_manifest = {
     "assets": [
       "star-rate.51bad527.svg",
       "format-quote.1171d0d0.svg",
-      "lilian-alex.899a9450.svg",
+      "Lilian-Alex.899a9450.svg",
       "avatar-ian.66716691.svg",
       "kehinde-ajibade.12912e15.svg",
       "arrow-left-disabled.2b7a8d51.svg",
@@ -333,16 +508,18 @@ const client_manifest = {
       "FAQ.d9ea9852.png"
     ],
     "css": [],
-    "file": "index.ce43777d.js",
+    "file": "index.99f0a0d3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_AppFooter.a9efc6e3.js"
+      "_Spinner.9b9ac8b7.js",
+      "_AppFooter.56203127.js",
+      "_nuxt-link.3adf5d24.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
   },
-  "index.80c0545c.css": {
-    "file": "index.80c0545c.css",
+  "index.382c6534.css": {
+    "file": "index.382c6534.css",
     "resourceType": "style"
   },
   "star-rate.51bad527.svg": {
@@ -355,8 +532,8 @@ const client_manifest = {
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
-  "lilian-alex.899a9450.svg": {
-    "file": "lilian-alex.899a9450.svg",
+  "Lilian-Alex.899a9450.svg": {
+    "file": "Lilian-Alex.899a9450.svg",
     "resourceType": "image",
     "mimeType": "image/svg+xml"
   },
@@ -455,13 +632,26 @@ const client_manifest = {
     "resourceType": "image",
     "mimeType": "image/png"
   },
+  "pages/privacy.vue": {
+    "resourceType": "script",
+    "module": true,
+    "file": "privacy.620db8da.js",
+    "imports": [
+      "_AppFooter.56203127.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_nuxt-link.3adf5d24.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "pages/privacy.vue"
+  },
   "pages/terms.vue": {
     "resourceType": "script",
     "module": true,
-    "file": "terms.7ce846ff.js",
+    "file": "terms.7941b2cb.js",
     "imports": [
-      "_AppFooter.a9efc6e3.js",
-      "node_modules/nuxt/dist/app/entry.js"
+      "_AppFooter.56203127.js",
+      "node_modules/nuxt/dist/app/entry.js",
+      "_nuxt-link.3adf5d24.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/terms.vue"
