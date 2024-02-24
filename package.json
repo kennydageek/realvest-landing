@@ -1,5 +1,5 @@
 {
-  "name": "Realvest Website",
+  "name": "realvest",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -13,6 +13,11 @@
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18.17.3",
     "nuxt": "^3.6.5",
-    "sass": "^1.65.1"
+    "sass": "^1.65.1",
+    "@nuxtjs/sanity": "^1.8.3",
+    "@sanity/client": "^6.12.3",
+    "@sanity/image-url": "^1.0.2",
+    "sanity-blocks-vue-component": "^1.0.1",
+    "vue-social-sharing": "^4.0.0-alpha4"
   }
 }

@@ -14,10 +14,18 @@
 
       <!-- Navbar Links (hidden on mobile) -->
       <ul class="md:flex gap-6 self-center hidden">
-        <li class="p-3"><a href="/" class="nav-links">Home</a></li>
-        <li class="p-3"><a href="#about" class="nav-links">About Us</a></li>
-        <!-- <li class="p-3"><a href="#blog" class="nav-links">Blog</a></li> -->
-        <li class="p-3"><a href="#FAQ" class="nav-links">FAQs</a></li>
+        <li class="p-3">
+          <nuxt-link href="/" class="nav-links">Home</nuxt-link>
+        </li>
+        <li class="p-3">
+          <nuxt-link href="/#about" class="nav-links">About Us</nuxt-link>
+        </li>
+        <li class="p-3">
+          <nuxt-link to="/blog" class="nav-links">Blog</nuxt-link>
+        </li>
+        <li class="p-3">
+          <nuxt-link to="/#FAQ" class="nav-links">FAQS</nuxt-link>
+        </li>
       </ul>
 
       <!-- Navbar Buttons (hidden on mobile) -->
@@ -59,15 +67,19 @@
 
       <!-- Sidebar Links -->
       <ul class="sidebar-links">
-        <li><a href="" class="nav-links" @click="closeSidebar">Home</a></li>
-        <li class="mt-4" @click="closeSidebar">
-          <a href="#about" class="nav-links">About Us</a>
+        <li>
+          <nuxt-link href="/" class="nav-links" @click="closeSidebar"
+            >Home</nuxt-link
+          >
         </li>
-        <!-- <li class="mt-4" @click="closeSidebar">
-          <a href="#blog" class="nav-links">Blog</a>
-        </li> -->
         <li class="mt-4" @click="closeSidebar">
-          <a href="#FAQ" class="nav-links">FAQs</a>
+          <a href="/#about" class="nav-links">About Us</a>
+        </li>
+        <li class="mt-4" @click="closeSidebar">
+          <a href="/#FAQ" class="nav-links">FAQs</a>
+        </li>
+        <li class="mt-4" @click="closeSidebar">
+          <nuxt-link to="/blog" class="nav-links">Blog</nuxt-link>
         </li>
       </ul>
 
@@ -111,12 +123,12 @@ export default {
 .sidebar {
   position: fixed;
   top: 0;
-  left: -700px; /* Initially off-screen */
+  left: -1000px; /* Initially off-screen */
   width: 100%;
   height: 100%;
   background: rgba(22, 47, 72, 0.3);
   backdrop-filter: blur(10px); /* Adjust as needed */
-  transition: left 0.3s ease-in-out;
+  transition: left 0.7s ease-in-out;
   z-index: 9999999999;
   padding: 24px;
 }

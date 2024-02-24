@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&display=swap');
 
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,401,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -115,6 +117,18 @@
 
   .pill-error {
     @apply px-3 py-1 rounded-xl font-[100] text-[12px] text-[#c50f15] bg-[#fde7e8];
+  }
+
+  .pill-estate {
+    @apply px-3 py-1 rounded-xl font-[100] text-[12px] text-[#F35C35] bg-[#FEF7F5];
+  }
+
+  .pill-business {
+    @apply px-3 py-1 rounded-xl font-[100] text-[12px] text-[#7065F0] bg-[#F1F0FE];
+  }
+
+  .pill-luxury {
+    @apply px-3 py-1 rounded-xl font-[100] text-[12px] text-[#B99213] bg-[#FDF8EA];
   }
 
   .title {

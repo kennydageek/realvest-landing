@@ -66,9 +66,9 @@
 
 <script>
 import ReviewCard from '@/components/ReviewCard';
-// import Review1 from '@/assets/images/lilian-alex.svg';
-// import Review2 from '@/assets/images/avatar-ian.svg';
-// import Review3 from '@/assets/images/kehinde-ajibade.svg';
+import Review1 from '@/assets/images/lilian-alex.svg';
+import Review2 from '@/assets/images/avatar-ian.svg';
+import Review3 from '@/assets/images/kehinde-ajibade.svg';
 export default {
   components: { ReviewCard },
 
@@ -82,23 +82,23 @@ export default {
           review:
             'Realvest enhances saving for home owners I hope this opportunity for home ownership relaunches.',
           name: 'John Adepoju',
-          // image: Review1,
+          image: Review1,
         },
         {
           review: 'It is a safe and trusted means of saving.',
           name: 'Ayeyemi Temitope',
-          // image: Review2,
+          image: Review2,
         },
 
         {
           review: 'Really impressed, well done to the team',
           name: 'Kehinde Ajibade',
-          // image: Review3,
+          image: Review3,
         },
         {
           review: 'Good customer service, keep it up',
           name: 'Oladayo Adeniyi',
-          // image: Review2,
+          image: Review2,
         },
 
         // {
