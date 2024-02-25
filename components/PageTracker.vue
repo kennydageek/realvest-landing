@@ -12,21 +12,24 @@
         :class="{
           ' text-[#252F48] font-bold border-l-[#F35C35]': activeTab === index,
         }"
-        @click="scrollToTopic(index)"
+        @click="scrollToTopic(topic.id, index)"
       >
         {{ topic.title }}
       </button>
     </nav>
 
-    <div class="md:ml-8 w-full scrollbar h-[600px] overflow-scroll">
-      <div v-for="(topic, index) in topics" :key="index" class="topic-section">
-        <div class="block-content" :id="'topic-' + index">
-          <sanity-blocks
-            :blocks="body"
-            :serializers="serializers"
-          ></sanity-blocks>
-        </div>
+    <div
+      class="md:ml-8 w-full scrollbar h-[600px] overflow-scroll"
+      id="cont-scroll"
+    >
+      <!-- <div v-for="(topic, index) in topics" :key="index" class="topic-section"> -->
+      <div class="block-content">
+        <sanity-blocks
+          :blocks="body"
+          :serializers="serializers"
+        ></sanity-blocks>
       </div>
+      <!-- </div> -->
     </div>
   </div>
 </template>
@@ -73,12 +76,34 @@ export default {
     this.extractTopicsFromBody();
     this.observeTopics();
     window.addEventListener('scroll', this.handleScroll);
-    console.log(this.top);
+    console.log(this.$refs);
+
+    // this.linkTabs();
   },
   beforeDestroy() {
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
+    linkTabs() {
+      let blockContentDiv = document.querySelector('.block-content');
+
+      // Select all heading elements (h1 to h6) within the 'block-content' div
+      let headingElements = blockContentDiv.querySelectorAll(
+        'h1, h2, h3, h4, h5, h6'
+      );
+
+      // console.log(headingElements);
+      let topics = this.topics;
+
+      // Loop through each heading element and attach an id attribute
+      headingElements.forEach(function (heading, index) {
+        // Create a unique id based on the index
+        let id = topics[index].id;
+        // 'heading-' + (index + 1);
+        // Assign the id attribute to the heading element
+        heading.setAttribute('id', id);
+      });
+    },
     extractTopicsFromBody() {
       if (!this.body || !this.body.length) return;
 
@@ -96,14 +121,23 @@ export default {
             id: id,
           };
         });
+
+      console.log(this.topics);
+      this.linkTabs();
     },
 
-    scrollToTopic(index) {
-      this.activeTab = index;
-      const topicId = 'topic-' + index;
-      const element = document.getElementById(topicId);
+    scrollToTopic(index, num) {
+      this.activeTab = num;
+      console.log(index);
+      const element = document.getElementById(index);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        const container = document.getElementById('cont-scroll');
+        if (container) {
+          container.scrollTo({
+            top: element.offsetTop - container.offsetTop,
+            behavior: 'smooth',
+          });
+        }
       }
     },
     observeTopics() {

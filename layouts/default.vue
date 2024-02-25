@@ -1,6 +1,6 @@
 <template>
   <div class="w-screen z-50">
-    <navbar />
+    <navbar ref="navbar" />
   </div>
   <div class="">
     <slot />
